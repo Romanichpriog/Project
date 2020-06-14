@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Conventor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-bH-8be">
+                                <rect key="frame" x="170" y="164" width="219" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="64g-CX-3z8"/>
+                                    <constraint firstAttribute="width" constant="219" id="6kn-mt-gAZ"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmp-dM-bC1">
+                                <rect key="frame" x="170" y="302" width="219" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="anE-Pr-ezK"/>
+                                    <constraint firstAttribute="height" constant="128" id="klJ-td-R0R"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="введите сумму" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JTo-ED-7yn">
+                                <rect key="frame" x="24" y="205" width="139" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="LG0-vV-C5h"/>
+                                    <constraint firstAttribute="height" constant="34" id="sQj-t4-YRf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrY-ob-CZG">
+                                <rect key="frame" x="311" y="217" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Конвертировать в" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-gj-zNv">
+                                <rect key="frame" x="24" y="309" width="124" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="35L-VP-7tE"/>
+                                    <constraint firstAttribute="width" constant="124" id="QSy-fj-Fgc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1X-yk-Gbh">
+                                <rect key="frame" x="88" y="460" width="238" height="77.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="UdP-et-0qw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Currency Conventor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJB-pQ-6zS">
+                                <rect key="frame" x="51.666666666666657" y="91" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="9tE-Pi-XSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-So-cAw">
+                                <rect key="frame" x="111" y="602" width="153" height="56"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100.33333333333333" id="G71-hB-ObO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="jGd-Nf-xX3"/>
+                                    <constraint firstAttribute="width" constant="128" id="oER-lQ-RXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="17"/>
+                                <state key="normal" title="Конвертировать">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFZ-Aa-vut"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79070641579393164" green="0.78563645465561116" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JTo-ED-7yn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="3Aj-cs-h2X"/>
+                            <constraint firstItem="KJB-pQ-6zS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9gS-nV-wRH"/>
+                            <constraint firstItem="JTo-ED-7yn" firstAttribute="top" secondItem="KJB-pQ-6zS" secondAttribute="bottom" constant="70" id="CVO-jn-fS8"/>
+                            <constraint firstItem="8Lf-So-cAw" firstAttribute="top" secondItem="S1X-yk-Gbh" secondAttribute="bottom" constant="30" id="FAq-RT-r4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Lf-So-cAw" secondAttribute="bottom" constant="194" id="FLP-f1-s4f"/>
+                            <constraint firstItem="J4p-bH-8be" firstAttribute="top" secondItem="KJB-pQ-6zS" secondAttribute="bottom" constant="29" id="Fwp-QW-eT5"/>
+                            <constraint firstItem="fhz-gj-zNv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="d65-4Z-GrH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J4p-bH-8be" secondAttribute="trailing" constant="5" id="e25-sM-LdQ"/>
+                            <constraint firstItem="wmp-dM-bC1" firstAttribute="top" secondItem="J4p-bH-8be" secondAttribute="bottom" constant="10" id="fb1-AK-lrT"/>
+                            <constraint firstItem="8Lf-So-cAw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hgP-uS-Jt7"/>
+                            <constraint firstItem="S1X-yk-Gbh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jFm-yW-mxX"/>
+                            <constraint firstItem="S1X-yk-Gbh" firstAttribute="top" secondItem="wmp-dM-bC1" secondAttribute="bottom" constant="30" id="qoM-3E-sSI"/>
+                            <constraint firstItem="fhz-gj-zNv" firstAttribute="top" secondItem="JTo-ED-7yn" secondAttribute="bottom" constant="70" id="rLC-ZF-SE3"/>
+                            <constraint firstItem="wmp-dM-bC1" firstAttribute="top" secondItem="J4p-bH-8be" secondAttribute="bottom" constant="10" id="s7m-os-efT"/>
+                            <constraint firstItem="KJB-pQ-6zS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="zFF-Ca-1Hm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wmp-dM-bC1" secondAttribute="trailing" constant="5" id="zqb-Tw-Vpk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fromValue" destination="J4p-bH-8be" id="HYz-FO-HlD"/>
+                        <outlet property="result" destination="S1X-yk-Gbh" id="7Iy-ke-Tdy"/>
+                        <outlet property="summa" destination="JTo-ED-7yn" id="3vE-6r-a3p"/>
+                        <outlet property="toValue" destination="wmp-dM-bC1" id="hWh-PL-xXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
